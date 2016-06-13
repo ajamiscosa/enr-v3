@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls;
 
 namespace Enrollment.v3
 {
@@ -14,9 +15,11 @@ namespace Enrollment.v3
         [STAThread]
         static void Main()
         {
+            RadMessageBox.SetThemeName("Office2013Light");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.Main());
+            Application.Run(new Forms.Login());
         }
     }
 }

@@ -8,6 +8,10 @@ namespace Enrollment.Models
 {
     public class Session
     {
+        private Session() { }
+        public Session(User user)
+        {
 
+        }
     }
 }

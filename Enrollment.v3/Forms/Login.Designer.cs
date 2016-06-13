@@ -35,8 +35,8 @@
             this.btnLogin = new Telerik.WinControls.UI.RadButton();
             this.btnClear = new Telerik.WinControls.UI.RadButton();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
-            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
             this.radLabelElement1 = new Telerik.WinControls.UI.RadLabelElement();
+            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
@@ -96,7 +96,7 @@
             this.radStatusStrip1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.25F);
             this.radStatusStrip1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radLabelElement1});
-            this.radStatusStrip1.Location = new System.Drawing.Point(0, 324);
+            this.radStatusStrip1.Location = new System.Drawing.Point(0, 325);
             this.radStatusStrip1.Name = "radStatusStrip1";
             this.radStatusStrip1.Size = new System.Drawing.Size(292, 29);
             this.radStatusStrip1.TabIndex = 4;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 353);
+            this.ClientSize = new System.Drawing.Size(292, 354);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radStatusStrip1);
             this.Controls.Add(this.btnClear);
