@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Enrollment.v3
+namespace Enrollment.Controls
 {
-    public partial class Form1 : Form
+    public partial class CreateTeacher : UserControl
     {
-        public Form1()
+        public CreateTeacher()
         {
             InitializeComponent();
         }

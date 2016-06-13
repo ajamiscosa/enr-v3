@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Enrollment.v3")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Hephzibah Praisers Academe Inc. Enrollment System")]
+[assembly: AssemblyDescription("An Elementary Level Enrollment System for Hephzibah Praisers Academe Inc.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Enrollment.v3")]
+[assembly: AssemblyCompany("Erick Galido ft. Ali Kablan")]
+[assembly: AssemblyProduct("Hephzibah Praisers Academe Inc. Enrollment System")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
