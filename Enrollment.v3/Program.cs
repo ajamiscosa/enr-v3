@@ -15,10 +15,12 @@ namespace Enrollment.v3
         [STAThread]
         static void Main()
         {
-            RadMessageBox.SetThemeName("Office2013Light");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            RadMessageBox.SetThemeName("Office2013Light");
+
             Application.Run(new Forms.Login());
         }
     }

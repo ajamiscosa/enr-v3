@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
+using Enrollment.Classes;
+using Enrollment.Models;
 
 namespace Enrollment.Forms
 {
@@ -25,8 +27,19 @@ namespace Enrollment.Forms
 
         private void LoginAction(object sender, EventArgs e)
         {
-            new Main().Show();
-            this.Hide();
+            User user = new User(txtPassword.Text, txtPassword.Text);
+            Session s = user.Login();
+            if(s!=null)
+            {
+                new Main().Show();
+                this.Hide();
+            }
+            else
+            {
+                txtUsername.Clear();
+                txtPassword.Clear();
+                lblStatus.Text = "Login failed. Please try again.";
+            }
         }
 
         private void ClearAction(object sender, EventArgs e)

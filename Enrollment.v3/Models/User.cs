@@ -29,6 +29,7 @@ namespace Enrollment.Models
 
         public User()
         {
+
         }
 
         public User(String username, String password)
@@ -39,25 +40,43 @@ namespace Enrollment.Models
 
         public Session Login()
         {
-            Session s = new Session(this);
+            Session s = null;
             
             using(MySqlDataReader reader = ConnectionManager.ExecuteQuery(Queries.Data["USER_LOGIN_DATA"], this.Username))
             {
-                if(reader.Read())
+                if (reader.Read())
                 {
-                    if(reader["Password"].ToString()==SecurityUtils.MD5(this.Password))
+                    if (reader["Password"].ToString() == SecurityUtils.MD5(this.Password))
                     {
-
+                        RadMessageBox.Show(String.Format("You are now logged in as [{0}].", this.Username), "Welcome!", System.Windows.Forms.MessageBoxButtons.OK, RadMessageIcon.Info);
+                        s = new Session(this);
+                    }
+                    else
+                    {
+                        RadMessageBox.Show("Incorrect Password!", "Error!", System.Windows.Forms.MessageBoxButtons.OK, RadMessageIcon.Error);
                     }
                 }
                 else
                 {
-                    RadMessageBox.Show("User does not exist", "Error!", System.Windows.Forms.MessageBoxButtons.OK, RadMessageIcon.Error);
+                    RadMessageBox.Show("User does not exist!", "Error!", System.Windows.Forms.MessageBoxButtons.OK, RadMessageIcon.Error);
                 }
             }
 
-
+            if(s!=null)
+            {
+                s.Start();
+            }
             return s;
+        }
+
+        public bool Save()
+        {
+            return ConnectionManager.ExecuteCommand("");
+        }
+
+        public bool Update()
+        {
+            return ConnectionManager.ExecuteCommand("");
         }
     }
 

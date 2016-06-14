@@ -41,7 +41,9 @@
     <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.8.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -78,6 +80,12 @@
     </Compile>
     <Compile Include="Controls\CreateBuilding.Designer.cs">
       <DependentUpon>CreateBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CreateEnlistment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CreateEnlistment.Designer.cs">
+      <DependentUpon>CreateEnlistment.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\CreateRoom.cs">
       <SubType>UserControl</SubType>
@@ -137,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CreateBuilding.resx">
       <DependentUpon>CreateBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CreateEnlistment.resx">
+      <DependentUpon>CreateEnlistment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CreateRoom.resx">
       <DependentUpon>CreateRoom.cs</DependentUpon>

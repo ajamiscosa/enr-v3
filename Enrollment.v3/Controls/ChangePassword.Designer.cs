@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new Telerik.WinControls.UI.RadButton();
             this.radSeparator1 = new Telerik.WinControls.UI.RadSeparator();
             this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
@@ -37,9 +40,8 @@
             this.separator1 = new SwingWERX.Controls.Separator();
             this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
             this.separator10 = new SwingWERX.Controls.Separator();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
+            this.o13 = new Telerik.WinControls.Themes.Office2013LightTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
@@ -104,6 +106,45 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Text = "Change Password";
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.BackColor = System.Drawing.SystemColors.Window;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            this.label3.Location = new System.Drawing.Point(214, 144);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(339, 24);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "label3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.SystemColors.Window;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            this.label2.Location = new System.Drawing.Point(214, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(339, 24);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            this.label1.Location = new System.Drawing.Point(214, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(339, 24);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSave
             // 
@@ -194,45 +235,6 @@
             this.separator10.TabIndex = 39;
             this.separator10.Text = "Current Password";
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.label1.Location = new System.Drawing.Point(214, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 24);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.SystemColors.Window;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.label2.Location = new System.Drawing.Point(214, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(339, 24);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BackColor = System.Drawing.SystemColors.Window;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.label3.Location = new System.Drawing.Point(214, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(339, 24);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "label3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,5 +269,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private Telerik.WinControls.Themes.Windows8Theme w8;
+        private Telerik.WinControls.Themes.Office2013LightTheme o13;
     }
 }
