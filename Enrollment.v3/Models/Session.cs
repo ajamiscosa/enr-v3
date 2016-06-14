@@ -12,6 +12,8 @@ namespace Enrollment.Models
     {
         public String SessionID { get; private set; }
         public User CurrentUser { get; private set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
 
         private static Session _CurrentSession;
 
