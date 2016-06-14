@@ -93,9 +93,9 @@ namespace Enrollment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap banknotes_26 {
+        internal static System.Drawing.Bitmap banknotes {
             get {
-                object obj = ResourceManager.GetObject("banknotes-26", resourceCulture);
+                object obj = ResourceManager.GetObject("banknotes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace Enrollment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap invoice_26 {
+        internal static System.Drawing.Bitmap invoice {
             get {
-                object obj = ResourceManager.GetObject("invoice-26", resourceCulture);
+                object obj = ResourceManager.GetObject("invoice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

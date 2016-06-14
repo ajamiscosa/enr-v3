@@ -21,7 +21,7 @@ namespace Enrollment.v3
 
             RadMessageBox.SetThemeName("Office2013Light");
 
-            Application.Run(new Forms.Login());
+            Application.Run(new Forms.ReturningStudent());
         }
     }
 }
