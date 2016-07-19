@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
             this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
             this.o13 = new Telerik.WinControls.Themes.Office2013LightTheme();
             this.windows8Theme1 = new Telerik.WinControls.Themes.Windows8Theme();
@@ -166,12 +166,12 @@
             // 
             this.radDropDownList2.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.radDropDownList2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem1.Text = "Male";
-            radListDataItem2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem2.Text = "Female";
-            this.radDropDownList2.Items.Add(radListDataItem1);
-            this.radDropDownList2.Items.Add(radListDataItem2);
+            radListDataItem7.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem7.Text = "Male";
+            radListDataItem8.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem8.Text = "Female";
+            this.radDropDownList2.Items.Add(radListDataItem7);
+            this.radDropDownList2.Items.Add(radListDataItem8);
             this.radDropDownList2.Location = new System.Drawing.Point(5, 120);
             this.radDropDownList2.Name = "radDropDownList2";
             this.radDropDownList2.NullText = "- Select -";
@@ -194,18 +194,18 @@
             // 
             this.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.radDropDownList1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem3.Text = "Single";
-            radListDataItem4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem4.Text = "Married";
-            radListDataItem5.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem5.Text = "Separated";
-            radListDataItem6.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            radListDataItem6.Text = "Widowed";
-            this.radDropDownList1.Items.Add(radListDataItem3);
-            this.radDropDownList1.Items.Add(radListDataItem4);
-            this.radDropDownList1.Items.Add(radListDataItem5);
-            this.radDropDownList1.Items.Add(radListDataItem6);
+            radListDataItem1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem1.Text = "Single";
+            radListDataItem2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem2.Text = "Married";
+            radListDataItem9.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem9.Text = "Separated";
+            radListDataItem10.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            radListDataItem10.Text = "Widowed";
+            this.radDropDownList1.Items.Add(radListDataItem1);
+            this.radDropDownList1.Items.Add(radListDataItem2);
+            this.radDropDownList1.Items.Add(radListDataItem9);
+            this.radDropDownList1.Items.Add(radListDataItem10);
             this.radDropDownList1.Location = new System.Drawing.Point(378, 120);
             this.radDropDownList1.Name = "radDropDownList1";
             this.radDropDownList1.NullText = "- Select -";
@@ -584,6 +584,7 @@
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save";
             this.btnSave.ThemeName = "Office2013Light";
+            this.btnSave.Click += new System.EventHandler(this.SaveAction);
             // 
             // btnClear
             // 

@@ -87,6 +87,12 @@
     <Compile Include="Controls\CreateEnlistment.Designer.cs">
       <DependentUpon>CreateEnlistment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CreatePayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CreatePayment.Designer.cs">
+      <DependentUpon>CreatePayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\CreateRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CreateEnlistment.resx">
       <DependentUpon>CreateEnlistment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CreatePayment.resx">
+      <DependentUpon>CreatePayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CreateRoom.resx">
       <DependentUpon>CreateRoom.cs</DependentUpon>

@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls;
 using Telerik.WinControls.UI;
@@ -31,17 +33,19 @@ namespace Enrollment.Forms
             pgReportHome.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
             pgSectionHome.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
             pgTeacherHome.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
+
+            pgNewStudentRecord.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
+            pgEnlistment.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
+            pgPayment.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
+            pgLogsHome.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
+            pgStaffHome.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
         }
 
         private void FormClosingEvent(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
-        private void radMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void radMenuItem2_Click(object sender, EventArgs e)
         {
@@ -50,14 +54,22 @@ namespace Enrollment.Forms
 
         private void SelectedPageChangingEvent(object sender, Telerik.WinControls.UI.RadPageViewCancelEventArgs e)
         {
-            if (e.Page == pgAdmHome         ||
+            if (
+                e.Page == pgAdmHome         ||
                 e.Page == pgBuildingHome    ||
                 e.Page == pgMaintenanceHome ||
                 e.Page == pgPaymentHome     ||
                 e.Page == pgReportHome      ||
                 e.Page == pgSectionHome     ||
                 e.Page == pgTeacherHome     ||
-                e.Page == pgUserHome)
+                e.Page == pgUserHome        ||
+
+                e.Page == pgNewStudentRecord ||
+                e.Page == pgEnlistment ||
+                e.Page == pgPayment ||
+                e.Page == pgLogsHome || 
+                e.Page == pgStaffHome
+                )
             {
                 e.Page.Item.ButtonsPanel.CloseButton.Visibility = ElementVisibility.Collapsed;
             }
@@ -105,5 +117,38 @@ namespace Enrollment.Forms
             adminPageView.SelectedPage = pageAdmHome;
         }
 
+        private void StaffPageViewPageChanging(object sender, RadPageViewCancelEventArgs e)
+        {
+            if(e.Page == pageEnrollment)
+            {
+                RadPageViewPage createStudentPage = new RadPageViewPage();
+                createStudentPage.Text = "Create New User";
+
+                CreateStudent createStudent = new CreateStudent();
+                createStudent.Text = "Create New User";
+                createStudent.Dock = DockStyle.Fill;
+
+                createStudentPage.Controls.Add(createStudent);
+
+                enrollmentPage.Pages.Add(createStudentPage);
+                enrollmentPage.SelectedPage = createStudentPage;
+            }
+            else if(e.Page == pageEnlistment)
+            {
+                /*
+                RadPageViewPage enlistPage = new RadPageViewPage();
+                enlistPage.Text = "Student Enlistment";
+
+                CreateEnlistment createEnlistment = new CreateEnlistment();
+                createEnlistment.Text = "Student Enlistment";
+                createEnlistment.Dock = DockStyle.Fill;
+
+                enlistPage.Controls.Add(createEnlistment);
+
+                enlistmentPage.Pages.Add(enlistPage);
+                enlistmentPage.SelectedPage = enlistPage;
+                */
+            }
+        }
     }
 }

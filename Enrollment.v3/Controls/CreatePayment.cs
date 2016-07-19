@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Enrollment.Controls
 {
-    public partial class CreateTeacher : UserControl
+    public partial class CreatePayment : UserControl
     {
-        public CreateTeacher()
+        public CreatePayment()
         {
             InitializeComponent();
-        }
-
-        private void SaveAction(object sender, EventArgs e)
-        {
-
         }
     }
 }
