@@ -88,7 +88,6 @@
             this.pgEnlistment = new Telerik.WinControls.UI.RadPageViewPage();
             this.buttonLabel1 = new SwingWERX.Controls.ButtonLabel();
             this.radScrollablePanel1 = new Telerik.WinControls.UI.RadScrollablePanel();
-            this.createEnlistment1 = new Enrollment.Controls.CreateEnlistment();
             this.separator6 = new SwingWERX.Controls.Separator();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.pagePayment = new Telerik.WinControls.UI.RadPageViewPage();
@@ -108,6 +107,7 @@
             this.menuChangePW = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.menuLogout = new Telerik.WinControls.UI.RadMenuItem();
+            this.createEnlistment1 = new Enrollment.Controls.CreateEnlistment();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             this.contentPanel.SuspendLayout();
             this.panelManager1.SuspendLayout();
@@ -331,6 +331,7 @@
             this.pgUserHome.Controls.Add(this.radGroupBox1);
             this.pgUserHome.Controls.Add(this.btnUpdateStatus);
             this.pgUserHome.Controls.Add(this.btnCreateUser);
+            this.pgUserHome.ItemSize = new System.Drawing.SizeF(97F, 27F);
             this.pgUserHome.Location = new System.Drawing.Point(5, 31);
             this.pgUserHome.Name = "pgUserHome";
             this.pgUserHome.Size = new System.Drawing.Size(613, 495);
@@ -420,6 +421,7 @@
             // 
             this.pgSectionHome.Controls.Add(this.radGroupBox3);
             this.pgSectionHome.Controls.Add(this.radButton3);
+            this.pgSectionHome.ItemSize = new System.Drawing.SizeF(112F, 27F);
             this.pgSectionHome.Location = new System.Drawing.Point(5, 31);
             this.pgSectionHome.Name = "pgSectionHome";
             this.pgSectionHome.Size = new System.Drawing.Size(613, 495);
@@ -497,6 +499,7 @@
             // 
             this.pgTeacherHome.Controls.Add(this.radGroupBox2);
             this.pgTeacherHome.Controls.Add(this.btnCreateTeacher);
+            this.pgTeacherHome.ItemSize = new System.Drawing.SizeF(115F, 27F);
             this.pgTeacherHome.Location = new System.Drawing.Point(5, 31);
             this.pgTeacherHome.Name = "pgTeacherHome";
             this.pgTeacherHome.Size = new System.Drawing.Size(613, 495);
@@ -573,6 +576,7 @@
             // 
             // pgPaymentHome
             // 
+            this.pgPaymentHome.ItemSize = new System.Drawing.SizeF(114F, 27F);
             this.pgPaymentHome.Location = new System.Drawing.Point(5, 31);
             this.pgPaymentHome.Name = "pgPaymentHome";
             this.pgPaymentHome.Size = new System.Drawing.Size(613, 495);
@@ -604,6 +608,7 @@
             // 
             // pgBuildingHome
             // 
+            this.pgBuildingHome.ItemSize = new System.Drawing.SizeF(182F, 27F);
             this.pgBuildingHome.Location = new System.Drawing.Point(5, 31);
             this.pgBuildingHome.Name = "pgBuildingHome";
             this.pgBuildingHome.Size = new System.Drawing.Size(613, 495);
@@ -635,6 +640,7 @@
             // 
             // pgReportHome
             // 
+            this.pgReportHome.ItemSize = new System.Drawing.SizeF(109F, 27F);
             this.pgReportHome.Location = new System.Drawing.Point(5, 31);
             this.pgReportHome.Name = "pgReportHome";
             this.pgReportHome.Size = new System.Drawing.Size(613, 495);
@@ -666,6 +672,7 @@
             // 
             // pgMaintenanceHome
             // 
+            this.pgMaintenanceHome.ItemSize = new System.Drawing.SizeF(101F, 27F);
             this.pgMaintenanceHome.Location = new System.Drawing.Point(5, 31);
             this.pgMaintenanceHome.Name = "pgMaintenanceHome";
             this.pgMaintenanceHome.Size = new System.Drawing.Size(613, 495);
@@ -690,7 +697,7 @@
             this.staffPageView.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
             this.staffPageView.Location = new System.Drawing.Point(0, 0);
             this.staffPageView.Name = "staffPageView";
-            this.staffPageView.SelectedPage = this.pagePayment;
+            this.staffPageView.SelectedPage = this.pageStaffHome;
             this.staffPageView.Size = new System.Drawing.Size(800, 541);
             this.staffPageView.TabIndex = 0;
             this.staffPageView.ThemeName = "Office2013Light";
@@ -705,10 +712,10 @@
             // 
             this.pageStaffHome.Controls.Add(this.staffHomePage);
             this.pageStaffHome.Image = global::Enrollment.Properties.Resources.home;
-            this.pageStaffHome.ItemSize = new System.Drawing.SizeF(106F, 36F);
-            this.pageStaffHome.Location = new System.Drawing.Point(110, 5);
+            this.pageStaffHome.ItemSize = new System.Drawing.SizeF(104F, 34F);
+            this.pageStaffHome.Location = new System.Drawing.Point(108, 5);
             this.pageStaffHome.Name = "pageStaffHome";
-            this.pageStaffHome.Size = new System.Drawing.Size(685, 531);
+            this.pageStaffHome.Size = new System.Drawing.Size(687, 531);
             this.pageStaffHome.Text = "Home";
             // 
             // staffHomePage
@@ -718,7 +725,7 @@
             this.staffHomePage.Location = new System.Drawing.Point(0, 0);
             this.staffHomePage.Name = "staffHomePage";
             this.staffHomePage.SelectedPage = this.pgStaffHome;
-            this.staffHomePage.Size = new System.Drawing.Size(685, 531);
+            this.staffHomePage.Size = new System.Drawing.Size(687, 531);
             this.staffHomePage.TabIndex = 8;
             this.staffHomePage.Text = "radPageView1";
             this.staffHomePage.ThemeName = "Office2013Light";
@@ -731,14 +738,14 @@
             this.pgStaffHome.ItemSize = new System.Drawing.SizeF(92F, 27F);
             this.pgStaffHome.Location = new System.Drawing.Point(5, 31);
             this.pgStaffHome.Name = "pgStaffHome";
-            this.pgStaffHome.Size = new System.Drawing.Size(675, 495);
+            this.pgStaffHome.Size = new System.Drawing.Size(677, 495);
             this.pgStaffHome.Text = "Staff Home";
             // 
             // pageEnrollment
             // 
             this.pageEnrollment.Controls.Add(this.enrollmentPage);
             this.pageEnrollment.Image = global::Enrollment.Properties.Resources.academics;
-            this.pageEnrollment.ItemSize = new System.Drawing.SizeF(106F, 36F);
+            this.pageEnrollment.ItemSize = new System.Drawing.SizeF(104F, 34F);
             this.pageEnrollment.Location = new System.Drawing.Point(110, 5);
             this.pageEnrollment.Name = "pageEnrollment";
             this.pageEnrollment.Size = new System.Drawing.Size(685, 531);
@@ -771,7 +778,7 @@
             // 
             this.pageEnlistment.Controls.Add(this.enlistmentPage);
             this.pageEnlistment.Image = global::Enrollment.Properties.Resources.invoice;
-            this.pageEnlistment.ItemSize = new System.Drawing.SizeF(106F, 36F);
+            this.pageEnlistment.ItemSize = new System.Drawing.SizeF(104F, 34F);
             this.pageEnlistment.Location = new System.Drawing.Point(110, 5);
             this.pageEnlistment.Name = "pageEnlistment";
             this.pageEnlistment.Size = new System.Drawing.Size(685, 531);
@@ -837,14 +844,6 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radScrollablePanel1.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.SystemColors.Window;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radScrollablePanel1.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Window;
             // 
-            // createEnlistment1
-            // 
-            this.createEnlistment1.BackColor = System.Drawing.SystemColors.Window;
-            this.createEnlistment1.Location = new System.Drawing.Point(0, 0);
-            this.createEnlistment1.Name = "createEnlistment1";
-            this.createEnlistment1.Size = new System.Drawing.Size(656, 495);
-            this.createEnlistment1.TabIndex = 0;
-            // 
             // separator6
             // 
             this.separator6.BackColor = System.Drawing.SystemColors.Window;
@@ -870,7 +869,7 @@
             // 
             this.pagePayment.Controls.Add(this.paymentPage);
             this.pagePayment.Image = global::Enrollment.Properties.Resources.banknotes;
-            this.pagePayment.ItemSize = new System.Drawing.SizeF(106F, 36F);
+            this.pagePayment.ItemSize = new System.Drawing.SizeF(104F, 34F);
             this.pagePayment.Location = new System.Drawing.Point(110, 5);
             this.pagePayment.Name = "pagePayment";
             this.pagePayment.Size = new System.Drawing.Size(685, 531);
@@ -960,7 +959,7 @@
             // 
             this.pageLogs.Controls.Add(this.logsPage);
             this.pageLogs.Image = global::Enrollment.Properties.Resources.report;
-            this.pageLogs.ItemSize = new System.Drawing.SizeF(106F, 36F);
+            this.pageLogs.ItemSize = new System.Drawing.SizeF(104F, 34F);
             this.pageLogs.Location = new System.Drawing.Point(110, 5);
             this.pageLogs.Name = "pageLogs";
             this.pageLogs.Size = new System.Drawing.Size(685, 531);
@@ -983,6 +982,7 @@
             // 
             // pgLogsHome
             // 
+            this.pgLogsHome.ItemSize = new System.Drawing.SizeF(56F, 27F);
             this.pgLogsHome.Location = new System.Drawing.Point(5, 31);
             this.pgLogsHome.Name = "pgLogsHome";
             this.pgLogsHome.Size = new System.Drawing.Size(675, 495);
@@ -1062,6 +1062,14 @@
             this.menuLogout.Image = null;
             this.menuLogout.Name = "menuLogout";
             this.menuLogout.Text = "Logout";
+            // 
+            // createEnlistment1
+            // 
+            this.createEnlistment1.BackColor = System.Drawing.SystemColors.Window;
+            this.createEnlistment1.Location = new System.Drawing.Point(0, 0);
+            this.createEnlistment1.Name = "createEnlistment1";
+            this.createEnlistment1.Size = new System.Drawing.Size(656, 495);
+            this.createEnlistment1.TabIndex = 0;
             // 
             // Main
             // 

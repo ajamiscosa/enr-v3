@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn1 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.btnProceed = new Telerik.WinControls.UI.RadButton();
+            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
+            this.o13 = new Telerik.WinControls.Themes.Office2013LightTheme();
             this.paymentManager = new SwingWERX.Controls.PanelManager();
             this.pDetails = new SwingWERX.Controls.ManagedPanel();
             this.separator3 = new SwingWERX.Controls.Separator();
@@ -40,22 +48,25 @@
             this.separator10 = new SwingWERX.Controls.Separator();
             this.separator1 = new SwingWERX.Controls.Separator();
             this.managedPanel2 = new SwingWERX.Controls.ManagedPanel();
-            this.btnSave = new Telerik.WinControls.UI.RadButton();
-            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
-            this.o13 = new Telerik.WinControls.Themes.Office2013LightTheme();
+            this.gridPayment = new Telerik.WinControls.UI.RadGridView();
+            this.swxPanel1 = new SwingWERX.Controls.SwxPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProceed)).BeginInit();
             this.paymentManager.SuspendLayout();
             this.pDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPayment.MasterTemplate)).BeginInit();
+            this.swxPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox1.BackColor = System.Drawing.Color.Snow;
+            this.radGroupBox1.Controls.Add(this.swxPanel1);
             this.radGroupBox1.Controls.Add(this.paymentManager);
-            this.radGroupBox1.Controls.Add(this.btnSave);
+            this.radGroupBox1.Controls.Add(this.btnProceed);
             this.radGroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
             this.radGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
             this.radGroupBox1.GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office;
@@ -96,6 +107,17 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Text = "Payment";
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnProceed
+            // 
+            this.btnProceed.AllowShowFocusCues = false;
+            this.btnProceed.Font = new System.Drawing.Font("Segoe UI Semilight", 11F);
+            this.btnProceed.Location = new System.Drawing.Point(3, 445);
+            this.btnProceed.Name = "btnProceed";
+            this.btnProceed.Size = new System.Drawing.Size(291, 30);
+            this.btnProceed.TabIndex = 44;
+            this.btnProceed.Text = "Proceed";
+            this.btnProceed.ThemeName = "Office2013Light";
             // 
             // paymentManager
             // 
@@ -214,16 +236,64 @@
             this.managedPanel2.Size = new System.Drawing.Size(0, 0);
             this.managedPanel2.Text = "managedPanel2";
             // 
-            // btnSave
+            // gridPayment
             // 
-            this.btnSave.AllowShowFocusCues = false;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semilight", 11F);
-            this.btnSave.Location = new System.Drawing.Point(5, 440);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(289, 30);
-            this.btnSave.TabIndex = 44;
-            this.btnSave.Text = "Save";
-            this.btnSave.ThemeName = "Office2013Light";
+            this.gridPayment.BackColor = System.Drawing.Color.Snow;
+            this.gridPayment.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridPayment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gridPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
+            this.gridPayment.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gridPayment.Location = new System.Drawing.Point(0, 1);
+            // 
+            // 
+            // 
+            this.gridPayment.MasterTemplate.AllowAddNewRow = false;
+            this.gridPayment.MasterTemplate.AllowColumnChooser = false;
+            this.gridPayment.MasterTemplate.AllowColumnReorder = false;
+            this.gridPayment.MasterTemplate.AllowDragToGroup = false;
+            this.gridPayment.MasterTemplate.AllowRowResize = false;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.HeaderText = "";
+            gridViewTextBoxColumn1.Name = "column1";
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.HeaderText = "Description";
+            gridViewTextBoxColumn2.Name = "column2";
+            gridViewTextBoxColumn2.Width = 325;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.HeaderText = "Amount";
+            gridViewTextBoxColumn3.Name = "column3";
+            gridViewTextBoxColumn3.Width = 120;
+            gridViewCheckBoxColumn1.HeaderText = "Paid";
+            gridViewCheckBoxColumn1.Name = "column5";
+            gridViewCheckBoxColumn1.Width = 70;
+            this.gridPayment.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewCheckBoxColumn1});
+            this.gridPayment.MasterTemplate.EnableGrouping = false;
+            this.gridPayment.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridPayment.Name = "gridPayment";
+            this.gridPayment.ReadOnly = true;
+            this.gridPayment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gridPayment.Size = new System.Drawing.Size(587, 213);
+            this.gridPayment.TabIndex = 48;
+            this.gridPayment.Text = "radGridView1";
+            this.gridPayment.ThemeName = "Office2013Light";
+            // 
+            // swxPanel1
+            // 
+            this.swxPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.swxPanel1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.swxPanel1.BorderWidth = 1;
+            this.swxPanel1.Controls.Add(this.gridPayment);
+            this.swxPanel1.GradientColor1 = System.Drawing.SystemColors.Window;
+            this.swxPanel1.GradientColor2 = System.Drawing.SystemColors.Window;
+            this.swxPanel1.Location = new System.Drawing.Point(3, 225);
+            this.swxPanel1.Name = "swxPanel1";
+            this.swxPanel1.Size = new System.Drawing.Size(587, 214);
+            this.swxPanel1.TabIndex = 0;
+            this.swxPanel1.Text = "swxPanel1";
             // 
             // CreatePayment
             // 
@@ -235,9 +305,12 @@
             this.Size = new System.Drawing.Size(613, 495);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnProceed)).EndInit();
             this.paymentManager.ResumeLayout(false);
             this.pDetails.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPayment.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPayment)).EndInit();
+            this.swxPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -245,7 +318,7 @@
         #endregion
 
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
-        private Telerik.WinControls.UI.RadButton btnSave;
+        private Telerik.WinControls.UI.RadButton btnProceed;
         private SwingWERX.Controls.Separator separator1;
         private SwingWERX.Controls.Separator separator10;
         private SwingWERX.Controls.PanelManager paymentManager;
@@ -259,5 +332,7 @@
         private System.Windows.Forms.Label label1;
         private Telerik.WinControls.Themes.Windows8Theme w8;
         private Telerik.WinControls.Themes.Office2013LightTheme o13;
+        private Telerik.WinControls.UI.RadGridView gridPayment;
+        private SwingWERX.Controls.SwxPanel swxPanel1;
     }
 }

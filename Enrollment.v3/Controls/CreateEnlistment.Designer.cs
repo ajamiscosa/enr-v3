@@ -29,11 +29,21 @@
         private void InitializeComponent()
         {
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.separator3 = new SwingWERX.Controls.Separator();
+            this.label3 = new System.Windows.Forms.Label();
+            this.separator2 = new SwingWERX.Controls.Separator();
+            this.label2 = new System.Windows.Forms.Label();
+            this.separator1 = new SwingWERX.Controls.Separator();
             this.lblStudentID = new System.Windows.Forms.Label();
+            this.separator12 = new SwingWERX.Controls.Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
+            this.separator6 = new SwingWERX.Controls.Separator();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+            this.separator5 = new SwingWERX.Controls.Separator();
             this.radDropDownList3 = new Telerik.WinControls.UI.RadDropDownList();
+            this.separator4 = new SwingWERX.Controls.Separator();
             this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
             this.cmbGradeLevel = new Telerik.WinControls.UI.RadDropDownList();
             this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
@@ -41,16 +51,6 @@
             this.btnSave = new Telerik.WinControls.UI.RadButton();
             this.radSeparator1 = new Telerik.WinControls.UI.RadSeparator();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
-            this.separator12 = new SwingWERX.Controls.Separator();
-            this.label2 = new System.Windows.Forms.Label();
-            this.separator1 = new SwingWERX.Controls.Separator();
-            this.label3 = new System.Windows.Forms.Label();
-            this.separator2 = new SwingWERX.Controls.Separator();
-            this.label4 = new System.Windows.Forms.Label();
-            this.separator3 = new SwingWERX.Controls.Separator();
-            this.separator4 = new SwingWERX.Controls.Separator();
-            this.separator5 = new SwingWERX.Controls.Separator();
-            this.separator6 = new SwingWERX.Controls.Separator();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
@@ -117,6 +117,69 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.Window;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
+            this.label4.Location = new System.Drawing.Point(5, 177);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(352, 22);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "< >";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // separator3
+            // 
+            this.separator3.BackColor = System.Drawing.SystemColors.Window;
+            this.separator3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator3.Location = new System.Drawing.Point(5, 162);
+            this.separator3.Name = "separator3";
+            this.separator3.Size = new System.Drawing.Size(354, 16);
+            this.separator3.TabIndex = 56;
+            this.separator3.Text = "Remark(s)";
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.Window;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
+            this.label3.Location = new System.Drawing.Point(5, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(352, 22);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "< >";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // separator2
+            // 
+            this.separator2.BackColor = System.Drawing.SystemColors.Window;
+            this.separator2.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator2.Location = new System.Drawing.Point(5, 118);
+            this.separator2.Name = "separator2";
+            this.separator2.Size = new System.Drawing.Size(354, 16);
+            this.separator2.TabIndex = 54;
+            this.separator2.Text = "Previous Grade Level / Section";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Window;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
+            this.label2.Location = new System.Drawing.Point(5, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(352, 22);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "< >";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // separator1
+            // 
+            this.separator1.BackColor = System.Drawing.SystemColors.Window;
+            this.separator1.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator1.Location = new System.Drawing.Point(5, 74);
+            this.separator1.Name = "separator1";
+            this.separator1.Size = new System.Drawing.Size(354, 16);
+            this.separator1.TabIndex = 52;
+            this.separator1.Text = "Name";
+            // 
             // lblStudentID
             // 
             this.lblStudentID.BackColor = System.Drawing.SystemColors.Window;
@@ -127,6 +190,16 @@
             this.lblStudentID.TabIndex = 0;
             this.lblStudentID.Text = "< >";
             this.lblStudentID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // separator12
+            // 
+            this.separator12.BackColor = System.Drawing.SystemColors.Window;
+            this.separator12.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator12.Location = new System.Drawing.Point(5, 30);
+            this.separator12.Name = "separator12";
+            this.separator12.Size = new System.Drawing.Size(354, 16);
+            this.separator12.TabIndex = 50;
+            this.separator12.Text = "Student ID";
             // 
             // label1
             // 
@@ -193,6 +266,16 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox2.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(69)))), ((int)(((byte)(79)))));
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.radGroupBox2.GetChildAt(0).GetChildAt(1).GetChildAt(2).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // separator6
+            // 
+            this.separator6.BackColor = System.Drawing.SystemColors.Window;
+            this.separator6.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator6.Location = new System.Drawing.Point(5, 143);
+            this.separator6.Name = "separator6";
+            this.separator6.Size = new System.Drawing.Size(354, 16);
+            this.separator6.TabIndex = 59;
+            this.separator6.Text = "Downpayment (minimum P2000.00)";
+            // 
             // radTextBox1
             // 
             this.radTextBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
@@ -201,6 +284,16 @@
             this.radTextBox1.Size = new System.Drawing.Size(336, 24);
             this.radTextBox1.TabIndex = 0;
             this.radTextBox1.ThemeName = "Windows8";
+            // 
+            // separator5
+            // 
+            this.separator5.BackColor = System.Drawing.SystemColors.Window;
+            this.separator5.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator5.Location = new System.Drawing.Point(5, 87);
+            this.separator5.Name = "separator5";
+            this.separator5.Size = new System.Drawing.Size(354, 16);
+            this.separator5.TabIndex = 58;
+            this.separator5.Text = "Payment Mode";
             // 
             // radDropDownList3
             // 
@@ -215,6 +308,16 @@
             this.radDropDownList3.TabIndex = 11;
             this.radDropDownList3.Text = "- Select -";
             this.radDropDownList3.ThemeName = "Windows8";
+            // 
+            // separator4
+            // 
+            this.separator4.BackColor = System.Drawing.SystemColors.Window;
+            this.separator4.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
+            this.separator4.Location = new System.Drawing.Point(5, 31);
+            this.separator4.Name = "separator4";
+            this.separator4.Size = new System.Drawing.Size(354, 16);
+            this.separator4.TabIndex = 57;
+            this.separator4.Text = "Grade Level / Section";
             // 
             // radDropDownList1
             // 
@@ -263,109 +366,6 @@
             this.radSeparator1.TabIndex = 46;
             this.radSeparator1.Text = "radSeparator1";
             this.radSeparator1.ThemeName = "Office2013Light";
-            // 
-            // separator12
-            // 
-            this.separator12.BackColor = System.Drawing.SystemColors.Window;
-            this.separator12.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator12.Location = new System.Drawing.Point(5, 30);
-            this.separator12.Name = "separator12";
-            this.separator12.Size = new System.Drawing.Size(354, 16);
-            this.separator12.TabIndex = 50;
-            this.separator12.Text = "Student ID";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.Window;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
-            this.label2.Location = new System.Drawing.Point(5, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(352, 22);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "< >";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // separator1
-            // 
-            this.separator1.BackColor = System.Drawing.SystemColors.Window;
-            this.separator1.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator1.Location = new System.Drawing.Point(5, 74);
-            this.separator1.Name = "separator1";
-            this.separator1.Size = new System.Drawing.Size(354, 16);
-            this.separator1.TabIndex = 52;
-            this.separator1.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.Window;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
-            this.label3.Location = new System.Drawing.Point(5, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(352, 22);
-            this.label3.TabIndex = 53;
-            this.label3.Text = "< >";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // separator2
-            // 
-            this.separator2.BackColor = System.Drawing.SystemColors.Window;
-            this.separator2.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator2.Location = new System.Drawing.Point(5, 118);
-            this.separator2.Name = "separator2";
-            this.separator2.Size = new System.Drawing.Size(354, 16);
-            this.separator2.TabIndex = 54;
-            this.separator2.Text = "Previous Grade Level / Section";
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.Window;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 13.75F);
-            this.label4.Location = new System.Drawing.Point(5, 177);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(352, 22);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "< >";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // separator3
-            // 
-            this.separator3.BackColor = System.Drawing.SystemColors.Window;
-            this.separator3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator3.Location = new System.Drawing.Point(5, 162);
-            this.separator3.Name = "separator3";
-            this.separator3.Size = new System.Drawing.Size(354, 16);
-            this.separator3.TabIndex = 56;
-            this.separator3.Text = "Remark(s)";
-            // 
-            // separator4
-            // 
-            this.separator4.BackColor = System.Drawing.SystemColors.Window;
-            this.separator4.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator4.Location = new System.Drawing.Point(5, 31);
-            this.separator4.Name = "separator4";
-            this.separator4.Size = new System.Drawing.Size(354, 16);
-            this.separator4.TabIndex = 57;
-            this.separator4.Text = "Grade Level / Section";
-            // 
-            // separator5
-            // 
-            this.separator5.BackColor = System.Drawing.SystemColors.Window;
-            this.separator5.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator5.Location = new System.Drawing.Point(5, 87);
-            this.separator5.Name = "separator5";
-            this.separator5.Size = new System.Drawing.Size(354, 16);
-            this.separator5.TabIndex = 58;
-            this.separator5.Text = "Grade Level / Section";
-            // 
-            // separator6
-            // 
-            this.separator6.BackColor = System.Drawing.SystemColors.Window;
-            this.separator6.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
-            this.separator6.Location = new System.Drawing.Point(5, 143);
-            this.separator6.Name = "separator6";
-            this.separator6.Size = new System.Drawing.Size(354, 16);
-            this.separator6.TabIndex = 59;
-            this.separator6.Text = "Grade Level / Section";
             // 
             // CreateEnlistment
             // 
