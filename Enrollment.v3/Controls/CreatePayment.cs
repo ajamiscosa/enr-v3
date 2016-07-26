@@ -16,5 +16,10 @@ namespace Enrollment.Controls
         {
             InitializeComponent();
         }
+
+        private void Proceed_Action(object sender, EventArgs e)
+        {
+            new Forms.Payment().ShowDialog();
+        }
     }
 }
